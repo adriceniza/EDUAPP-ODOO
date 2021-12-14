@@ -12,27 +12,27 @@
         En views/views.xml 
             En la vista de sessions
                 Este es el codigo
-                ```bash
-                    <record id="res_partner_view_form_inherit_sessions" model="ir.ui.view">
-                        <field name="name">res.partner.view.form.inherit.eduapp</field>
-                        <field name="model">res.partner</field>
-                        <field name="inherit_id" ref="base.view_partner_form"/>
-                        <field name="arch" type="xml">
-                            <xpath expr="//page[@name='internal_notes']" position="after">
-                            <page string="Eduapp" name="Ficha_eduapp_users">
-                                <field name="sessions">
-                                <tree>
-                                    <field name="name"/>
-                                    <field name='date'/>
-                                    <field name='resourcesPlatform'/>
-                                    <field name='streamingPlatform'/>
-                                </tree>
-                                </field>
-                            </page>
-                            </xpath>
-                        </field>
-                    </record>
-                ```
+```bash
+    <record id="res_partner_view_form_inherit_sessions" model="ir.ui.view">
+        <field name="name">res.partner.view.form.inherit.eduapp</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']" position="after">
+            <page string="Eduapp" name="Ficha_eduapp_users">
+                <field name="sessions">
+                <tree>
+                    <field name="name"/>
+                    <field name='date'/>
+                    <field name='resourcesPlatform'/>
+                    <field name='streamingPlatform'/>
+                </tree>
+                </field>
+            </page>
+            </xpath>
+        </field>
+    </record>
+```
     5-Acciones, Elementos de menú y Grupos de permisos. (1 punto)
         En views/views.xml
     6-Inclusión de campos del tipo one2many y many2one. (1 punto)
