@@ -8,7 +8,8 @@
     3-Clases heredadas de otras clases existentes en otros módulos propios de Odoo. (1 punto)
         En models/models.py
             Tanto en el modulo de resources como en el de sessions , _inherit attribute.
-    4-Vistas heredadas de otras vistas existentes en otros módulos propios de Odoo. Se debe apreciar modificaciones en las vistas de esos otros módulos. (1 punto)
+    4-Vistas heredadas de otras vistas existentes en otros módulos propios de Odoo.
+     Se debe apreciar modificaciones en las vistas de esos otros módulos. (1 punto)
         En views/views.xml 
             En la vista de sessions
                 Este es el codigo
